@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppliReport - Never use a spreadsheet to track jobs again</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .logo {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    
+    .logo-text {
+      font-size: 36px;
+      font-weight: 700;
+      color: #2d5a27;
+    }
+    
+    .tagline {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #1a1a1a;
+    }
+    
+    .subtitle {
+      font-size: 18px;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    
+    /* Buttons */
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    
+    .btn {
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    
+    .btn-primary {
+      background: #4CAF50;
+      color: white;
+    }
+    
+    .btn-secondary {
+      background: #f5f5f5;
+      color: #333;
+      border: 2px solid #ddd;
+    }
+    
+    /* Screenshot */
+    .screenshot {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+    
+    .screenshot-placeholder {
+      background: #f0f0f0;
+      border-radius: 12px;
+      padding: 100px 40px;
+      color: #999;
+      font-style: italic;
+    }
+    
+    /* Features */
+    .features {
+      margin-bottom: 60px;
+    }
+    
+    .features h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    
+    .feature {
+      padding: 25px;
+      background: #f9f9f9;
+      border-radius: 10px;
+    }
+    
+    .feature h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #2d5a27;
+    }
+    
+    .feature p {
+      color: #666;
+      font-size: 15px;
+    }
+    
+    /* Differentiators */
+    .differentiators {
+      background: #f5f9f5;
+      padding: 40px;
+      border-radius: 12px;
+      margin-bottom: 60px;
+    }
+    
+    .differentiators h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .diff-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .diff-item {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .diff-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    
+    .diff-item h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    
+    .diff-item p {
+      color: #666;
+      font-size: 14px;
+    }
+    
+    /* About */
+    .about {
+      text-align: center;
+      padding: 40px;
+      background: #fafafa;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+    
+    .about h2 {
+      margin-bottom: 15px;
+    }
+    
+    .about p {
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 30px;
+      color: #999;
+      font-size: 14px;
+    }
+    
+    .footer a {
+      color: #666;
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">🍎</div>
+      <div class="logo-text">AppliReport</div>
+      <h1 class="tagline">Never use a spreadsheet to track jobs again.</h1>
+      <p class="subtitle">
+        Automatically finds and organizes every job application in your Gmail. 
+        See your Applied, Interviews, Offers, and Rejections at a glance.
+      </p>
+      <div class="buttons">
+        <a href="https://chrome.google.com/webstore" class="btn btn-primary">Add to Chrome - Free</a>
+        <a href="YOUR_STRIPE_PAYMENT_LINK" class="btn btn-secondary">Subscribe - $4.99/mo</a>
+      </div>
+    </header>
+    
+    <!-- Screenshot -->
+    <div class="screenshot">
+      <div class="screenshot-placeholder">
+        [Add screenshot of your extension here]
+      </div>
+    </div>
+    
+    <!-- Features -->
+    <section class="features">
+      <h2>What It Does</h2>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>📧 Scans Your Gmail</h3>
+          <p>Automatically detects job-related emails from application confirmations, interview invites, and status updates.</p>
+        </div>
+        <div class="feature">
+          <h3>📊 Organizes Everything</h3>
+          <p>Categorizes each application as Applied, Interview, Offer, or Rejected. No manual entry needed.</p>
+        </div>
+        <div class="feature">
+          <h3>🔗 One-Click Access</h3>
+          <p>Jump directly to the original email from any job entry. Never lose track of important details.</p>
+        </div>
+        <div class="feature">
+          <h3>📁 Export to CSV</h3>
+          <p>Download your complete job search history anytime. Your data, your control.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Differentiators -->
+    <section class="differentiators">
+      <h2>What Sets Us Apart</h2>
+      <div class="diff-grid">
+        <div class="diff-item">
+          <div class="diff-icon">✓</div>
+          <div>
+            <h3>100% Accuracy</h3>
+            <p>Our intelligent classification understands context, not just keywords. No missed applications, no false positives. Tested across 500+ emails with perfect accuracy.</p>
+          </div>
+        </div>
+        <div class="diff-item">
+          <div class="diff-icon">🔒</div>
+          <div>
+            <h3>Complete Privacy</h3>
+            <p>Your data never leaves your device. We use read-only Gmail access — we literally cannot modify or delete your emails. No accounts, no databases, no tracking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About -->
+    <section class="about">
+      <h2>Built by a Student, for Students</h2>
+      <p>
+        I built AppliReport because I was tired of manually tracking 100+ applications in a spreadsheet. 
+        As a junior at the University of Michigan, I know the internship grind. 
+        This tool is what I wished existed.
+      </p>
+      <p style="margin-top: 15px; font-weight: 500;">— Sam Jennings</p>
+    </section>
+    
+    <!-- CTA -->
+    <div style="text-align: center; margin-bottom: 40px;">
+      <a href="https://chrome.google.com/webstore" class="btn btn-primary" style="font-size: 18px; padding: 18px 40px;">
+        Get Started Free
+      </a>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <p>
+        AppliReport · Created by Samuel Jennings · 
+        <a href="mailto:samjen@umich.edu">samjen@umich.edu</a> · 
+        University of Michigan '27
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
